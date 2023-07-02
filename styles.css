@@ -7,10 +7,15 @@
 body{
     background-image: url('./mediamodifier-I3HPUolh5hA-unsplash.jpg');
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
-.container {
-    width: 26vw;
-    height: 57vh;
+
+.container{
+    width:350px;
+    height:450px;
     background: #3d4543;
     position: absolute;
     top: 18vh;
@@ -18,19 +23,17 @@ body{
     border-radius: 15px;
     overflow: hidden;
 }
-
 .display {
-    width: 330px;
+    width: 300px;
     height: 60px;
     background: #222;
-    margin: 35px;
+    margin: 35px 25px;
 }
-
 .display input {
     position: relative;
     left: 5px;
     top: 2px;
-    width: 320px;
+    width: 290px;
     height: 55px;
     color:rgb(3, 14, 13);
     background-color: #bccd95;
@@ -42,26 +45,25 @@ body{
     font-size: 30px;
     padding:0px;
 }
-.display input:focus{
-    border: none;
-}
-.keypad {
-    /* padding:10px; */
-    margin: 0 30px;
-
+.keypad{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px 10px;
 }
 
 .keypad button {
     width: 60px;
     height: 40px;
     border-radius: 12px;
-    margin: 0 10px;
+    /* margin: 0 10px; */
     font-size: 24px;
     /* border-bottom: 3px solid black; */
     box-shadow: 1px 4px 5px rgb(0, 0, 0);
     /* background-color: rgb(28, 12, 12); */
+    flex-basis:70px;
+    flex-shrink: 0;
 }
-
 .keypad button:hover {
     border: 2px solid rgba(228, 232, 113, 0.3);
 }
@@ -98,9 +100,9 @@ border-top:2px 303030 solid;
 }  
 
 @media (max-width:960px){
-    .container {
-        width: 42vw;
-        height: 58vh;
+    .container{
+        width:350px;
+        height:450px;
         background: #3d4543;
         position: absolute;
         top: 18vh;
@@ -108,31 +110,17 @@ border-top:2px 303030 solid;
         border-radius: 15px;
         overflow: hidden;
     }
-}
-
-@media (max-width:560px){
-    .container {
-        width:350px;
-        height: 400px;
-        background: #3d4543;
-        position: absolute;
-        top: 18vh;
-        left: 10vw;
-        border-radius: 15px;
-        overflow: hidden;
-    }
     .display {
-        width: 305px;
+        width: 300px;
         height: 60px;
         background: #222;
-        margin: 30px 20px;
+        margin: 35px 25px;
     }
-    
     .display input {
         position: relative;
         left: 5px;
         top: 2px;
-        width: 300px;
+        width: 290px;
         height: 55px;
         color:rgb(3, 14, 13);
         background-color: #bccd95;
@@ -144,21 +132,107 @@ border-top:2px 303030 solid;
         font-size: 30px;
         padding:0px;
     }
-    .keypad {
-        /* padding:10px; */
-        margin: 0 20px;
-    
-    }
-    
-    .keypad button {
-        width: 60px;
-        height: 35px;
-        border-radius: 12px;
-        margin: 0 7px;
-        font-size: 20px;
-        /* border-bottom: 3px solid black; */
-        box-shadow: 1px 4px 5px rgb(0, 0, 0);
-        /* background-color: rgb(28, 12, 12); */
+    .keypad{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 10px;
     }
     
 }
+
+@media (max-width:560px){
+    .container{
+        width:350px;
+        height:450px;
+        background: #3d4543;
+        position: absolute;
+        top: 18vh;
+        left: 20vw;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .display {
+        width: 300px;
+        height: 60px;
+        background: #222;
+        margin: 35px 25px;
+    }
+    .display input {
+        position: relative;
+        left: 5px;
+        top: 2px;
+        width: 290px;
+        height: 55px;
+        color:rgb(3, 14, 13);
+        background-color: #bccd95;
+        font-size: 21px;
+        text-align: right;
+        border:3px solid white;
+        border-left:none;
+        border-top:none;
+        font-size: 30px;
+        padding:0px;
+    }
+    .keypad{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 10px;
+    }
+   
+}
+@media (max-width:360px){
+    .container{
+        width:330px;
+        height:450px;
+        background: #3d4543;
+        position: absolute;
+        top: 18vh;
+        left: 5vw;
+        border-radius: 15px;
+        overflow: hidden;
+    }
+    .display {
+        width: 290px;
+        height: 60px;
+        background: #222;
+        margin: 35px 25px;
+    }
+    .display input {
+        position: relative;
+        left: 5px;
+        top: 2px;
+        width: 280px;
+        height: 55px;
+        color:rgb(3, 14, 13);
+        background-color: #bccd95;
+        font-size: 21px;
+        text-align: right;
+        border:3px solid white;
+        border-left:none;
+        border-top:none;
+        font-size: 30px;
+        padding:0px;
+    }
+    .keypad{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px 10px;
+    }
+    .keypad button {
+        width: 50px;
+        height: 40px;
+        border-radius: 12px;
+        /* margin: 0 10px; */
+        font-size: 24px;
+        /* border-bottom: 3px solid black; */
+        box-shadow: 1px 4px 5px rgb(0, 0, 0);
+        /* background-color: rgb(28, 12, 12); */
+        flex-basis:60px;
+        flex-shrink: 0;
+    }
+   
+}
+
