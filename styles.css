@@ -112,8 +112,8 @@ border-top:2px 303030 solid;
 
 @media (max-width:560px){
     .container {
-        width:70vw;
-        height: 53vh;
+        width:350px;
+        height: 400px;
         background: #3d4543;
         position: absolute;
         top: 18vh;
@@ -122,8 +122,8 @@ border-top:2px 303030 solid;
         overflow: hidden;
     }
     .display {
-        width: 61vw;
-        height: 8vh;
+        width: 305px;
+        height: 60px;
         background: #222;
         margin: 30px 20px;
     }
